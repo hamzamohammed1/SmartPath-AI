@@ -1,0 +1,2790 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f5f9ff;
+color: #222;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background: white;
+}
+
+nav h2 {
+color: #1a73e8;
+}
+
+nav a {
+margin-left: 20px;
+text-decoration: none;
+color: #333;
+}
+
+.hero {
+text-align: center;
+padding: 100px 30px;
+}
+
+.hero h1 {
+font-size: 50px;
+color: #1a73e8;
+}
+
+.hero p {
+font-size: 20px;
+max-width: 650px;
+margin: 20px auto;
+line-height: 1.6;
+}
+
+button {
+background: #1a73e8;
+color: white;
+border: none;
+padding: 16px 35px;
+border-radius: 30px;
+font-size: 18px;
+cursor: pointer;
+}
+.features {
+text-align: center;
+padding: 60px 30px;
+}
+
+.features h2 {
+font-size: 35px;
+color: #1a73e8;
+}
+
+.cards {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-top: 40px;
+flex-wrap: wrap;
+}
+
+.card {
+background: white;
+width: 280px;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+color: #1a73e8;
+}
+
+.card p {
+color: #555;
+line-height: 1.5;
+}
+.planner {
+text-align: center;
+padding: 70px 30px;
+}
+
+.planner h1 {
+color: #1a73e8;
+font-size: 40px;
+}
+
+.planner p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.planner input {
+display: block;
+width: 80%;
+max-width: 450px;
+margin: 15px auto;
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 10px;
+font-size: 16px;
+}
+
+.planner button {
+margin-top: 20px;
+}
+/* ===== SmartPath AI Premium Planner ===== */
+
+body{
+
+margin:0;
+font-family:'Segoe UI',sans-serif;
+
+background:
+radial-gradient(circle at top,#1d4ed8,#020617 55%);
+
+color:white;
+
+min-height:100vh;
+
+}
+
+/* Planner Area */
+
+.planner{
+
+min-height:100vh;
+
+padding:50px 20px 120px;
+
+text-align:center;
+
+}
+
+/* AI Welcome */
+
+.ai-message{
+
+max-width:750px;
+
+margin:40px auto;
+
+animation:fadeUp 1s ease;
+
+}
+
+.ai-message h1{
+
+font-size:45px;
+
+font-weight:900;
+
+background:
+linear-gradient(90deg,#38bdf8,#a78bfa);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.ai-message p{
+
+font-size:20px;
+
+opacity:.85;
+
+}
+
+/* Main Question Box */
+
+.question-card{
+
+max-width:750px;
+
+margin:30px auto;
+
+padding:40px;
+
+background:
+
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:35px;
+
+border:1px solid rgba(255,255,255,.2);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.5);
+
+animation:fadeUp .8s ease;
+
+}
+
+/* Question title */
+
+.question-card h2{
+
+font-size:28px;
+
+}
+
+/* Options */
+
+.option-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+}
+
+.option-container button,
+.next-btn{
+
+padding:16px 35px;
+
+border-radius:50px;
+
+border:none;
+
+background:
+
+linear-gradient(
+135deg,
+#38bdf8,
+#6366f1
+);
+
+color:white;
+
+font-size:17px;
+
+font-weight:70;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.option-container button:hover,
+.next-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 15px 35px rgba(56,189,248,.4);
+
+}
+
+/* Input */
+
+.planner input{
+
+width:80%;
+
+max-width:450px;
+
+padding:18px;
+
+border-radius:20px;
+
+border:none;
+
+outline:none;
+
+font-size:17px;
+
+margin:20px;
+
+}
+
+/* Progress */
+
+.progress-box{
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+.progress-box p{
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+.progress-bar{
+
+height:12px;
+
+background:rgba(255,255,255,.2);
+
+border-radius:30px;
+
+overflow:hidden;
+
+}
+
+.progress-fill{
+
+height:100%;
+
+width:0%;
+
+background:
+
+linear-gradient(
+90deg,
+#38bdf8,
+#a78bfa
+);
+
+transition:.8s ease;
+
+}
+
+/* Theme button */
+.theme-btn{
+
+position:fixed;
+
+top:90px;
+
+right:20px;
+
+z-index:900;
+
+}
+
+/* Subject list */
+
+.subject-item{
+
+background:rgba(255,255,255,.12);
+
+padding:15px;
+
+margin:10px;
+
+border-radius:15px;
+
+animation:fadeUp .5s ease;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Light Mode */
+
+.light-mode{
+
+background:white;
+
+color:#111827;
+
+}
+
+.light-mode .question-card{
+
+background:white;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.light-mode .ai-message p{
+
+color:#374151;
+
+}
+
+.light-mode .option-container button{
+
+color:white;
+
+}
+/* ===== Premium Planner Improvements ===== */
+
+/* Better option spacing */
+
+.option-container{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:22px;
+
+}
+
+/* Premium buttons */
+
+.option-container button,
+.next-btn,
+#answer-area button{
+
+width:90%;
+max-width:420px;
+
+padding:20px 30px;
+
+border-radius:25px;
+
+border:none;
+
+background:
+linear-gradient(
+135deg,
+#38bdf8,
+#6366f1
+);
+
+color:white;
+
+font-size:19px;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.25);
+
+}
+
+/* Button hover */
+
+.option-container button:hover,
+#answer-area button:hover{
+
+transform:scale(1.05) translateY(-5px);
+
+box-shadow:
+0 20px 45px rgba(56,189,248,.5);
+
+}
+
+/* Button click effect */
+
+.option-container button:active,
+#answer-area button:active{
+
+transform:scale(.97);
+
+}
+
+/* Advanced name input */
+
+#student-name{
+
+width:90%;
+
+max-width:500px;
+
+padding:22px 25px;
+
+margin:30px auto;
+
+display:block;
+
+border-radius:25px;
+
+border:2px solid rgba(255,255,255,.3);
+
+background:
+
+rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+color:white;
+
+font-size:20px;
+
+text-align:center;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+/* Input glow when typing */
+
+#student-name:focus{
+
+border-color:#38bdf8;
+
+box-shadow:
+
+0 0 25px rgba(56,189,248,.6);
+
+}
+
+/* Placeholder */
+
+#student-name::placeholder{
+
+color:rgba(255,255,255,.7);
+
+}
+
+/* Give questions more space */
+
+.question-card{
+
+padding:50px 35px;
+
+}
+
+/* Mobile improvement */
+
+@media(max-width:600px){
+
+.question-card{
+
+padding:35px 20px;
+
+}
+
+.question-card h2{
+
+font-size:23px;
+
+}
+
+#answer-area button{
+
+width:100%;    
+
+font-size:15px;
+
+}
+
+}
+/* ===== SmartPath AI Chat Style Upgrade ===== */
+
+/* Better button layout */
+
+.option-container,
+#answer-area{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+
+}
+
+/* Premium smaller buttons */
+
+#answer-area button,
+.option-container button{
+
+width:75%;
+max-width:350px;
+
+padding:15px 25px;
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,.25);
+
+background:
+
+linear-gradient(
+135deg,
+#111827,
+#2563eb
+);
+
+color:white;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:
+
+0 8px 20px rgba(0,0,0,.35);
+
+}
+
+#answer-area button:hover,
+.option-container button:hover{
+
+transform:translateY(-4px);
+
+background:
+
+linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+
+box-shadow:
+
+0 15px 35px rgba(37,99,235,.5);
+
+}
+
+/* AI question bubble */
+
+#question-title{
+
+background:
+
+rgba(255,255,255,.12);
+
+padding:20px 25px;
+
+border-radius:25px 25px 25px 5px;
+
+max-width:600px;
+
+margin:20px auto;
+
+text-align:left;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* User typing box */
+
+#student-name{
+
+width:95%;
+
+max-width:600px;
+
+height:65px;
+
+padding:0 25px;
+
+border-radius:35px;
+
+background:
+
+rgba(255,255,255,.15);
+
+border:
+
+1px solid rgba(255,255,255,.3);
+
+color:white;
+
+font-size:20px;
+
+text-align:left;
+
+margin:25px auto;
+
+}
+
+/* typing focus */
+
+#student-name:focus{
+
+background:
+
+rgba(255,235,255,.22);
+
+border-color:#38bdf8;
+
+box-shadow:
+
+0 0 30px rgba(56,189,248,.5);
+
+}
+
+/* User answer bubble after selection */
+
+.user-message{
+
+align-self:flex-end;
+
+background:
+
+linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:25px 25px 5px 25px;
+
+margin:15px;
+
+max-width:70%;
+
+animation:fadeUp .5s ease;
+
+}
+/* ===== SmartPath AI Final ChatGPT Style Upgrade ===== */
+
+/* Make answer buttons smaller + spaced */
+
+#answer-area,
+.option-container {
+
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
+justify-content:center;
+gap:12px;
+
+}
+
+/* Premium AI choice buttons */
+
+#answer-area button,
+.option-container button {
+
+width:auto;
+min-width:140px;
+max-width:220px;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+font-size:15px;
+
+background:
+linear-gradient(135deg,#0f172a,#2563eb,#7c3aed);
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.35);
+
+}
+
+/* Hover effect */
+
+#answer-area button:hover,
+.option-container button:hover {
+
+transform:translateY(-4px) scale(1.03);
+
+}
+
+/* AI question bubble */
+
+#question-title {
+
+background:
+rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px 25px 25px 5px;
+
+padding:20px 25px;
+
+text-align:left;
+
+}
+
+/* ===== Bottom ChatGPT Input ===== */
+
+.chat-input-area {
+
+position:fixed;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:90%;
+
+max-width:700px;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+background:
+
+rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+padding:10px;
+
+border-radius:50px;
+
+border:1px solid rgba(255,255,255,.25);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.4);
+
+}
+
+.chat-input-area input {
+
+flex:1;
+
+background:transparent;
+
+border:none;
+
+outline:none;
+
+color:white;
+
+font-size:18px;
+
+padding:15px 20px;
+
+}
+
+.chat-input-area input::placeholder {
+
+color:rgba(255,255,255,.7);
+
+}
+
+/* Send arrow button */
+
+.send-btn {
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+border:none;
+
+cursor:pointer;
+
+font-size:25px;
+
+color:white;
+
+background:
+
+linear-gradient(135deg,#38bdf8,#8b5cf6);
+
+transition:.3s;
+
+}
+
+.send-btn:hover {
+
+transform:scale(1.1) translateY(-3px);
+
+}
+
+/* Chat messages */
+
+#chat {
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.ai-chat {
+
+align-self:flex-start;
+
+background:
+
+linear-gradient(135deg,#111827,#334155);
+
+padding:15px 22px;
+
+border-radius:25px 25px 25px 5px;
+
+margin:15px;
+
+max-width:70%;
+
+}
+
+.user-chat {
+
+align-self:flex-end;
+
+background:
+
+linear-gradient(135deg,#2563eb,#7c3aed);
+
+padding:15px 22px;
+
+border-radius:25px 25px 5px 25px;
+
+margin:15px;
+
+max-width:70%;
+
+}
+
+/* Subjects horizontal cards */
+
+.subject-item {
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+min-width:130px;
+
+height:60px;
+
+margin:8px;
+
+background:
+
+rgba(255,255,255,.15);
+
+border-radius:20px;
+
+}
+
+#answer-area:has(.subject-item) {
+
+flex-direction:row;
+
+overflow-x:auto;
+
+justify-content:flex-start;
+
+}
+
+/* Give planner space above bottom chat */
+
+.question-card {
+margin-bottom: 140px;
+}
+
+#answer-area {
+padding-bottom: 80px;
+}
+.send-btn{
+width:80px;
+height:45px;
+border-radius:25px;
+font-size:8px;
+font-weight:1000;
+}
+.logo{
+
+width:600px;
+height:205px;
+
+border-radius:30px;
+
+object-fit:cover;
+
+object-position:center;
+
+box-shadow:
+0 5px 20px rgba(56,189,248,.4);
+
+}
+/* ===== AI APP HEADER ===== */
+
+/* ===== Premium SmartPath Header ===== */
+
+.top-header{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+height:75px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 25px;
+
+box-sizing:border-box;
+
+background:
+
+rgba(2,6,23,.75);
+
+backdrop-filter:blur(20px);
+
+border-bottom:
+
+1px solid rgba(255,255,255,.15);
+
+z-index:1000;
+
+}
+
+/* Left side */
+
+.back-btn{
+
+font-size:28px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+/* Logo + text */
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.header-logo{
+
+width:80px;
+
+height:50px;
+
+border-radius:70px;
+
+object-fit:cover;
+
+box-shadow:
+
+0 5px 20px rgba(56,189,248,.5);
+
+}
+
+.brand span{
+
+font-size:18px;
+
+font-weight:800;
+
+background:
+
+linear-gradient(
+90deg,
+#38bdf8,
+#c084fc
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.brand small{
+
+display:block;
+
+font-size:10px;
+
+color:white;
+
+opacity:.7;
+
+}
+
+/* Navigation */
+
+.header-actions{
+
+display:flex;
+
+align-items:center;
+
+gap:5px;
+
+}
+
+.header-actions a{
+
+color:white;
+
+text-decoration:none;
+
+padding:8px 12px;
+
+border-radius:20px;
+
+font-size:14px;
+
+}
+
+.header-actions a:hover{
+
+background:
+
+rgba(255,255,255,.15);
+
+}
+
+/* One hamburger */
+
+.hamburger{
+
+width:42px;
+
+height:62px;
+
+border:none;
+
+border-radius:14px;
+
+background:
+
+linear-gradient(
+135deg,
+#38bdf8,
+#7c3aed
+);
+
+color:white;
+
+font-size:22px;
+
+}
+
+/* Logo */
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:white;
+
+font-size:20px;
+
+font-weight:800;
+
+}
+
+.header-logo{
+
+width:80px;
+
+height:35px;
+
+border-radius:12px;
+
+object-fit:cover;
+
+}
+
+/* Right side */
+
+.header-actions{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+.header-actions a{
+
+color:white;
+
+text-decoration:none;
+
+padding:8px 12px;
+
+border-radius:20px;
+
+font-size:15px;
+
+}
+
+.header-actions a:hover{
+
+background:#2563eb;
+
+}
+
+/* Hamburger */
+
+.hamburger{
+
+width:42px;
+height:42px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border:none;
+
+border-radius:14px;
+
+background:
+linear-gradient(
+135deg,
+#38bdf8,
+#7c3aed
+);
+
+color:white;
+
+font-size:22px;
+
+line-height:1;
+
+cursor:pointer;
+
+padding:0;
+
+}
+
+/* Dropdown */
+
+.menu-box{
+
+position:absolute;
+
+right:20px;
+
+top:80px;
+
+width:220px;
+
+padding:20px;
+
+border-radius:25px;
+
+display:none;
+
+flex-direction:column;
+
+gap:12px;
+
+background:
+
+rgba(15,23,42,.95);
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.5);
+
+}
+
+.menu-box.show{
+
+display:flex;
+
+animation:drop .3s ease;
+
+}
+
+.menu-box a{
+
+color:white;
+
+text-decoration:none;
+
+padding:15px;
+
+border-radius:15px;
+
+background:
+
+rgba(255,255,255,.08);
+
+}
+
+.menu-box a:hover{
+
+background:
+
+linear-gradient(135deg,#2563eb,#7c3aed);
+
+}
+
+@keyframes drop{
+
+from{
+
+opacity:0;
+
+transform:translateY(-20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Prevent header covering page */
+
+body{
+
+padding-top:90px;
+
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.header-actions a{
+
+display:none;
+
+}
+
+.brand span{
+
+font-size:16px;
+
+}
+
+}
+body{
+
+margin:0;
+
+padding-top:75px;
+
+}
+/* ===== SmartPath AI Premium Footer ===== */
+
+.smart-footer{
+
+margin-top:80px;
+
+padding:50px 40px 25px;
+
+background:
+
+radial-gradient(
+circle at top,
+#1e40af,
+#020617 70%
+);
+
+border-top:
+
+1px solid rgba(255,255,255,.15);
+
+color:white;
+
+box-shadow:
+
+0 -20px 50px rgba(0,0,0,.5);
+
+}
+
+.footer-brand{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+max-width:400px;
+
+}
+
+.footer-logo{
+
+width:120px;
+
+height:65px;
+
+border-radius:20px;
+
+object-fit:cover;
+
+box-shadow:
+
+0 0 30px rgba(56,189,248,.7);
+
+}
+
+.footer-brand h2{
+
+margin:0;
+
+font-size:28px;
+
+background:
+
+linear-gradient(
+90deg,
+#38bdf8,
+#c084fc
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.footer-brand p{
+
+color:#cbd5e1;
+
+line-height:1.6;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+margin-top:45px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links div{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.footer-links h3{
+
+color:#38bdf8;
+
+margin-bottom:10px;
+
+}
+
+.footer-links a{
+
+color:#e2e8f0;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#38bdf8;
+
+transform:translateX(5px);
+
+}
+
+.footer-bottom{
+
+margin-top:45px;
+
+padding-top:20px;
+
+border-top:
+
+1px solid rgba(255,255,255,.15);
+
+display:flex;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
+color:#94a3b8;
+
+font-size:14px;
+
+}
+
+@media(max-width:100px){
+
+.footer-links{
+
+flex-direction:column;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+}
+
+.social-row{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+}
+
+.social-row a{
+
+width:55px;
+
+height:55px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:
+
+rgba(255,255,255,.1);
+
+backdrop-filter:blur(10px);
+
+border:
+
+1px solid rgba(255,255,255,.2);
+
+transition:.35s;
+
+}
+
+.social-row img{
+
+width:49px;
+
+height:80px;
+
+object-fit:contain;
+
+}
+
+.social-row a:hover{
+
+transform:translateY(-8px) scale(4.1);
+
+box-shadow:
+
+0 15px 35px rgba(56,189,248,.6);
+
+}
+
+/* AI Chat Input */
+
+.chat-input{
+
+position:sticky;
+
+bottom:15px;
+
+display:flex;
+
+gap:10px;
+
+padding:15px;
+
+background:
+
+rgba(2,6,23,.8);
+
+backdrop-filter:blur(20px);
+
+border-radius:35px;
+
+}
+
+.chat-input input{
+
+flex:1;
+
+height:55px;
+
+border:none;
+
+outline:none;
+
+border-radius:30px;
+
+padding:0 25px;
+
+font-size:17px;
+
+background:
+
+rgba(255,255,255,.12);
+
+color:white;
+
+}
+
+.chat-input button{
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+font-size:25px;
+
+padding:0;
+
+background:
+
+linear-gradient(
+135deg,
+#38bdf8,
+#7c3aed
+);
+
+}
+
+/* User message bubble */
+
+.user-message{
+
+margin-left:auto;
+
+margin-top:20px;
+
+max-width:70%;
+
+padding:15px 25px;
+
+background:
+
+linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+
+border-radius:25px 25px 5px 25px;
+
+animation:fadeUp .5s ease;
+
+}
+/* ============================= /
+/ SMARTPATH AI HOME PREMIUM BODY /
+/ ============================= */
+
+.smart-hero{
+
+min-height:70vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:80px 20px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.smart-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:
+radial-gradient(circle,#2563eb,transparent 70%);
+
+filter:blur(80px);
+
+opacity:.5;
+
+}
+
+.home-logo{
+
+width:75px;
+
+height:75px;
+
+border-radius:25px;
+
+object-fit:cover;
+
+z-index:1;
+
+box-shadow:
+0 0 40px rgba(56,189,248,.8);
+
+animation:floatLogo 3s infinite ease-in-out;
+
+}
+
+.smart-hero h1{
+
+margin-top:30px;
+
+font-size:55px;
+
+font-weight:900;
+
+z-index:1;
+
+}
+
+.smart-hero h1 span{
+
+background:
+linear-gradient(90deg,#38bdf8,#a78bfa);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.smart-hero p{
+
+max-width:700px;
+
+font-size:20px;
+
+opacity:.85;
+
+line-height:1.7;
+
+z-index:1;
+
+}
+
+@keyframes floatLogo{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+/* IMAGE SHOWCASE */
+
+.ai-showcase{
+
+text-align:center;
+
+padding:50px 20px;
+
+}
+
+.showcase-box{
+
+max-width:750px;
+
+height:400px;
+
+margin:auto;
+
+position:relative;
+
+border-radius:35px;
+
+overflow:hidden;
+
+background:
+
+rgba(255,255,255,.08);
+/* ===== Selected Choice Effect ===== */
+
+
+#answer-area button.selected{
+
+background:
+linear-gradient(
+135deg,
+#22c55e,
+#06b6d4,
+#8b5cf6
+);
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 25px rgba(34,197,94,.7);
+
+border:
+
+2px solid white;
+
+}
+
+
+/* Focus subject cards */
+
+#answer-area button[id^="focus-"]{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+#answer-area button[id^="focus-"].selected::after{
+
+content:"✓ Selected";
+
+position:absolute;
+
+right:10px;
+
+top:5px;
+
+font-size:11px;
+
+background:white;
+
+color:#2563eb;
+
+padding:3px 8px;
+
+border-radius:20px;
+
+}
+
+
+/* Free days selected */
+
+.day-selected{
+
+background:
+linear-gradient(
+135deg,
+#f59e0b,
+#ef4444,
+#ec4899
+)!important;
+
+transform:scale(1.05);
+
+}
+
+/* FINAL QUESTION COLORS */
+
+#answer-area.grade-theme button{
+    background:linear-gradient(135deg,#22c55e,#06b6d4)!important;
+}
+
+
+#answer-area.plan-theme button{
+    background:linear-gradient(135deg,#6366f1,#a855f7)!important;
+}
+
+
+#answer-area.time-theme button{
+    background:linear-gradient(135deg,#14b8a6,#3b82f6)!important;
+}
+
+
+#answer-area.focus-theme button{
+    background:linear-gradient(135deg,#eab308,#f97316)!important;
+}
+
+
+#answer-area.days-theme button{
+    background:linear-gradient(135deg,#ec4899,#8b5cf6)!important;
+}
+
+
+#answer-area.style-theme button{
+    background:linear-gradient(135deg,#0f172a,#2563eb,#7c3aed)!important;
+}
+/* AI Question Back Button */
+
+.question-header{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+
+#back-question{
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+border:none;
+
+background:
+linear-gradient(
+135deg,
+#38bdf8,
+#7c3aed
+);
+
+color:white;
+
+font-size:25px;
+
+cursor:pointer;
+
+box-shadow:
+0 10px 25px rgba(56,189,248,.4);
+
+transition:.3s;
+
+}
+
+
+#back-question:hover{
+
+transform:
+translateX(-5px)
+scale(1.1);
+
+}
+
+
+#back-question:active{
+
+transform:scale(.9);
+
+}
+
+/* ==============================
+   SMARTPATH AI PREMIUM BACK BUTTON
+================================ */
+
+.back-btn{
+
+position:fixed;
+
+top:95px;
+left:25px;
+
+width:55px;
+height:55px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+font-size:28px;
+
+font-weight:900;
+
+color:white;
+
+cursor:pointer;
+
+background:
+linear-gradient(
+135deg,
+#38bdf8,
+#6366f1,
+#a855f7
+);
+
+box-shadow:
+
+0 0 20px rgba(56,189,248,.8),
+0 0 40px rgba(168,85,247,.5);
+
+border:
+
+1px solid rgba(255,255,255,.4);
+
+backdrop-filter:blur(15px);
+
+z-index:2000;
+
+transition:.35s;
+
+animation:
+backGlow 3s infinite;
+
+}
+
+
+/* Hover */
+
+.back-btn:hover{
+
+transform:
+scale(1.12)
+translateX(-5px)
+rotate(-5deg);
+
+
+box-shadow:
+
+0 0 30px #38bdf8,
+0 0 60px #a855f7;
+
+}
+
+
+/* Click */
+
+.back-btn:active{
+
+transform:
+scale(.9);
+
+}
+
+
+
+/* Floating glow */
+
+@keyframes backGlow{
+
+
+0%,100%{
+
+box-shadow:
+0 0 20px rgba(56,189,248,.8),
+0 0 40px rgba(168,85,247,.5);
+
+}
+
+
+50%{
+
+box-shadow:
+
+0 0 35px rgba(56,189,248,1),
+0 0 70px rgba(168,85,247,.8);
+
+}
+
+/* ===== SMART AI BACK BUTTON ===== */
+
+.ai-back-btn{
+
+position:fixed;
+
+left:20px;
+
+bottom:95px;
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+border:1px solid rgba(255,255,255,.3);
+
+background:
+
+linear-gradient(
+135deg,
+rgba(56,189,248,.8),
+rgba(124,58,237,.8)
+);
+
+backdrop-filter:blur(20px);
+
+color:white;
+
+font-size:16px;
+
+font-weight:800;
+
+cursor:pointer;
+
+z-index:999;
+
+box-shadow:
+
+0 0 25px rgba(56,189,248,.6);
+
+transition:.4s;
+
+animation:
+backFloat 3s infinite ease-in-out;
+
+}
+
+
+.ai-back-btn span{
+
+font-size:28px;
+
+line-height:1;
+
+}
+
+
+.ai-back-btn small{
+
+font-size:14px;
+
+}
+
+
+.ai-back-btn:hover{
+
+transform:
+
+translateY(-5px)
+scale(1.08);
+
+box-shadow:
+
+0 0 45px rgba(168,85,247,.9);
+
+background:
+
+linear-gradient(
+135deg,
+#06b6d4,
+#9333ea
+);
+
+}
+
+
+
+.ai-back-btn:active{
+
+transform:scale(.92);
+
+}
+
+
+
+@keyframes backFloat{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+
+}
+
+
+
+/* mobile */
+
+@media(max-width:600px){
+
+
+.ai-back-btn{
+
+left:15px;
+
+bottom:85px;
+
+padding:10px 18px;
+
+}
+
+
+.ai-back-btn span{
+
+font-size:24px;
+
+}
+
+
+}
+
+
+}
+
+/* ==============================
+      AURA SMARTPATH AI
+================================*/
+
+
+.aura-ai{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+z-index:99999;
+
+}
+
+
+
+.aura-avatar{
+
+width:75px;
+
+height:75px;
+
+border-radius:50%;
+
+border:none;
+
+padding:0;
+
+cursor:pointer;
+
+background:white;
+
+position:relative;
+
+box-shadow:
+0 0 30px #38bdf8;
+
+animation:auraFloat 3s infinite;
+
+}
+
+
+
+.aura-avatar img{
+
+width:100%;
+
+height:100%;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+
+
+.aura-avatar span{
+
+position:absolute;
+
+right:5px;
+
+bottom:8px;
+
+width:16px;
+
+height:16px;
+
+background:#22c55e;
+
+border-radius:50%;
+
+border:3px solid white;
+
+}
+
+
+
+@keyframes auraFloat{
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+
+
+
+
+.aura-box{
+
+
+position:absolute;
+
+right:0;
+
+bottom:95px;
+
+
+width:330px;
+
+
+background:
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.95),
+rgba(219,234,254,.95)
+);
+
+
+border-radius:30px;
+
+
+padding:25px;
+
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.35);
+
+
+display:none;
+
+
+animation:auraOpen .4s ease;
+
+
+}
+
+
+
+.aura-box.active{
+
+display:block;
+
+}
+
+
+
+@keyframes auraOpen{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px) scale(.8);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+
+
+
+
+.aura-header{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+
+.aura-header img{
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+}
+
+
+
+.aura-header h3{
+
+margin:0;
+
+color:#2563eb;
+
+}
+
+
+
+.aura-header p{
+
+margin:3px 0;
+
+font-size:13px;
+
+color:#64748b;
+
+}
+
+
+
+
+
+.aura-message{
+
+margin:25px 0;
+
+
+padding:18px;
+
+
+border-radius:20px;
+
+
+background:
+
+rgba(37,99,235,.08);
+
+
+min-height:80px;
+
+
+font-size:15px;
+
+
+line-height:1.6;
+
+
+color:#334155;
+
+
+}
+
+
+
+
+
+.aura-action{
+
+
+width:100%;
+
+
+height:55px;
+
+
+border:none;
+
+
+border-radius:30px;
+
+
+cursor:pointer;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+gap:12px;
+
+
+font-size:17px;
+
+
+font-weight:800;
+
+
+color:white;
+
+
+
+background:
+
+linear-gradient(
+135deg,
+#2563eb,
+#9333ea
+);
+
+
+
+box-shadow:
+
+0 15px 40px rgba(37,99,235,.4);
+
+
+transition:.3s;
+
+
+}
+
+
+
+.aura-action:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+
+
+.aura-spinner{
+
+display:none;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+border:3px solid rgba(255,255,255,.4);
+
+border-top-color:white;
+
+animation:spin .8s linear infinite;
+
+}
+
+
+
+.aura-action.loading .aura-spinner{
+
+display:block;
+
+}
+
+
+
+@keyframes spin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+
+
+@media(max-width:500px){
+
+.aura-ai{
+
+right:15px;
+
+bottom:15px;
+
+}
+
+
+.aura-box{
+
+width:280px;
+
+}
+
+}
+
+/* ==========================
+      AURA AI HINT TEXT
+=========================== */
+
+
+.aura-container{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+
+
+
+.aura-hint{
+
+font-size:14px;
+
+font-weight:900;
+
+letter-spacing:1px;
+
+
+background:
+
+linear-gradient(
+90deg,
+#38bdf8,
+#a855f7,
+#ec4899,
+#38bdf8
+);
+
+
+background-size:300%;
+
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+
+animation:
+
+auraColor 4s linear infinite,
+
+auraBounce 2s infinite;
+
+
+text-shadow:
+
+0 0 15px rgba(56,189,248,.5);
+
+
+cursor:pointer;
+
+
+}
+
+
+
+@keyframes auraColor{
+
+
+0%{
+
+background-position:0%;
+
+}
+
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+
+
+
+
+
+@keyframes auraBounce{
+
+
+50%{
+
+transform:translateY(-4px);
+
+}
+
+}
+
+
+
+
+.aura-hint::before{
+
+content:"";
+
+position:absolute;
+
+}
+
+
+
+.aura-avatar:hover + .aura-hint{
+
+transform:scale(1.15);
+

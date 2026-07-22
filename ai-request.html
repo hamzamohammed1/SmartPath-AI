@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SmartPath AI Request</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="ai-request.css">
+
+</head>
+
+
+<body>
+
+
+<div class="question-card">
+
+
+<h1>
+🎉 Your SmartPath Profile is Complete!
+</h1>
+
+
+<p id="message">
+We prepared your personal AI timetable request.
+Copy it below, then continue to create your amazing study plan.
+</p>
+
+
+
+<div class="ai-request-box">
+
+
+    <div class="terminal-header">
+
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+
+        <span class="terminal-title">
+            SmartPath AI Engine
+        </span>
+
+    </div>
+
+
+    <div 
+    id="ai-request-text"
+    class="terminal-body">
+
+    </div>
+
+
+</div>
+
+
+
+<div class="processing-status">
+
+    <div id="spinner"></div>
+
+    <span id="status-text">
+        Processing your SmartPath AI request...
+    </span>
+
+</div>
+
+
+
+<button
+id="copy-btn"
+onclick="copyRequest()">
+
+📋 Copy AI Request
+
+</button>
+
+
+<p id="copy-message"></p>
+
+</div>
+
+
+
+<div id="ai-popup" class="popup">
+
+    <div class="popup-content">
+
+
+        <div class="images">
+
+            <img src="image1.png">
+
+            <img src="image2.png">
+
+        </div>
+
+
+        <p id="typing-text"></p>
+
+
+        <button id="popup-btn"
+        onclick="goToAI()">
+
+        🚀 Continue to Duck.ai
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<script src="ai-request.js"></script>
+
+
+</body>
+
+</html>
+

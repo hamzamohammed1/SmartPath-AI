@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>SmartPath AI</title>
+
+<link rel="stylesheet" href="home-style.css">
+
+</head>
+
+<body>
+
+<!-- Theme Button -->
+
+<button class="theme-btn" id="themeToggle">
+🌙
+</button>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="top-header">
+
+<div class="back-btn" onclick="history.back()">
+←
+</div>
+
+<div class="brand">
+
+<img src="logo.png" class="header-logo">
+
+<div>
+
+<span>SmartPath AI</span>
+
+<small>
+Your intelligent study companion
+</small>
+
+</div>
+
+</div>
+
+<div class="header-actions">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="planner.html">
+Planner
+</a>
+
+<button class="hamburger"
+onclick="toggleMenu()">
+☰
+</button>
+
+</div>
+
+
+<!-- Mobile Menu -->
+
+<div class="menu-box" id="menuBox">
+
+<a href="index.html">
+🏠 Home
+</a>
+
+<a href="planner.html">
+🚀 Planner
+</a>
+
+<a href="about.html">
+✨ About
+</a>
+
+<a href="competency.html">
+✨ Competecy
+</a>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="home-hero">
+
+<div class="hero-glow"></div>
+
+<img src="logo.png" class="hero-logo">
+
+<h1>
+
+Welcome to
+
+<br>
+
+<span>SmartPath AI</span>
+
+</h1>
+
+<h2>
+Your Intelligent Study Companion 🚀
+</h2>
+<div class="ai-typing-box">
+
+<span id="typingText"></span>
+
+</div>
+<p>
+
+Create smart study plans,
+improve weak subjects,
+and prepare for exams with
+personalized AI guidance.
+
+</p>
+
+ 
+<!-- Stats -->
+
+<div class="hero-description">
+
+<p>🎓💎
+</p>
+
+</div>
+
+
+<div class="ai-stats">
+
+
+<div class="ai-card">
+
+<div class="ai-icon">🎗️  </div>
+
+<h3>AI</h3>
+
+<span>
+Smart Planning
+</span>
+
+<p>
+Personalized study paths powered by intelligence.
+</p>
+
+</div>
+
+
+
+<div class="ai-card">
+
+<div class="ai-icon">🎓🇪🇹 </div>
+
+<h3>9-12</h3>
+
+<span>
+Student Support
+</span>
+
+<p>
+Designed for high school learning success. ethiopian version
+</p>
+
+</div>
+
+
+
+
+<div class="ai-card">
+
+<div class="ai-icon">〽️</div>
+
+<h3>24/7</h3>
+
+<span>
+Learning Guide
+</span>
+
+<p>
+Your AI assistant anytime you need help.
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- Buttons -->
+
+<div class="home-buttons">
+
+<button
+class="planner-btn"
+onclick="window.location.href='planner.html'">
+
+🚀 Open Planner
+
+</button>
+
+<button
+class="competency-btn"
+onclick="window.location.href='competency.html'">
+
+🚀 Open competency
+
+</button>
+
+</div>
+
+</section>
+
+<div class="home-buttons">
+
+<button class="planner-btn">
+...
+</button>
+
+<button class="competency-btn">
+...
+</button>
+
+</div>
+<!-- TIMETABLE TEMPLATE BOX -->
+
+<section class="template-section">
+
+
+<button class="template-toggle" onclick="toggleTemplates()">
+
+<span>View Timetable Templates</span>
+
+<div class="down-arrow">
+⌄
+</div>
+
+</button>
+
+
+
+<div class="template-box" id="templateBox">
+
+
+<div class="template-grid">
+
+
+<img src="template1.png">
+<img src="template2.png">
+<img src="template3.png">
+<img src="template4.png">
+<img src="template5.png">
+<img src="template6.png">
+<img src="template7.png">
+<img src="template8.png">
+<img src="template9.png">
+<img src="template10.png">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- ================= AI PHOTO SHOWCASE ================= -->
+
+<section class="showcase">
+
+<div class="slider-box">
+
+<button class="arrow left">
+❮
+</button>
+
+
+<img id="slideImage" src="photo1.png">
+
+
+<button class="arrow right">
+❯
+</button>
+
+</div>
+
+
+<h3 id="slideTitle">
+Create Smart Timetables
+</h3>
+
+
+<p id="slideText">
+AI helps you generate your perfect study schedule.
+</p>
+
+
+</section>
+
+
+
+
+<!-- ================= ABOUT SMARTPATH ================= -->
+
+
+<section class="about-home">
+
+<h2>
+Why SmartPath AI?
+</h2>
+
+
+<p>
+SmartPath AI helps students create personalized study plans,
+improve weak subjects and follow a smarter learning journey. students can create a perfect study plan in a second.
+ Personalized AI timetable creation
+📚 Competency-based learning support
+📈 Smart progress tracking
+🎯 Goal-focused exam preparation
+🧠 Better study organization
+</p>
+
+
+</section>
+
+
+
+
+<footer class="smart-footer">
+
+
+<div class="footer-brand">
+
+<img src="logo.png" class="footer-logo">
+
+
+<div>
+<h2>SmartPath AI</h2>
+
+<p>
+Your intelligent study companion.
+<br>
+Building smarter learning paths with AI.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="footer-links">
+
+
+<div>
+<h3>Navigation</h3>
+
+<a href="index.html">Home</a>
+<a href="planner.html">Planner</a>
+<a href="about.html">About</a>
+<a href="compentency.html">ccompetency</a>
+
+</div>
+
+
+
+<div>
+<h3>AI Planner</h3>
+
+<a href="#">Study Plans</a>
+<a href="#">Smart Schedule</a>
+<a href="#">Student Progress</a>
+
+</div>
+
+
+
+<div class="contact-box">
+
+<h3>Contact SmartPath AI</h3>
+
+
+<a href="mailto:hamza097669@gmail.com">
+hamza097669@gmail.com
+</a>
+
+
+<a href="tel:0977499498">
+0977499498
+</a>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 SmartPath AI. All rights reserved.
+</p>
+
+
+<p>
+Designed with 🚀 for smarter students
+</p>
+
+
+</div>
+
+
+</footer>
+
+<div class="social-row">
+
+
+<a href="https://t.me/Aithor1" target="_blank">
+<img src="telegram.png" alt="Telegram">
+</a>
+
+
+<a href="https://wa.me/251977499498" target="_blank">
+<img src="whatsapp.png" alt="WhatsApp">
+</a>
+
+
+<a href="https://twitter.com/YOUR_USERNAME" target="_blank">
+<img src="twitter.png" alt="Twitter">
+</a>
+
+
+<a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">
+<img src="linkedin.png" alt="LinkedIn">
+</a>
+
+
+</div>
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("menuBox")
+.classList.toggle("show");
+
+}
+
+</script>
+
+
+<script src="./home-slider.js"></script>
+
+<!-- ================= AURA SMARTPATH AI ================= -->
+
+<div class="aura-ai">
+
+<div class="aura-container">
+
+
+<button class="aura-avatar" id="auraButton">
+
+<img src="ai-avatar.png">
+
+<span></span>
+
+</button>
+
+
+<div class="aura-hint">
+  Ask AI 
+</div>
+
+
+</div>
+
+<div class="aura-box" id="auraBox">
+
+
+<div class="aura-header">
+
+<img src="ai-avatar.png">
+
+<div>
+<h3>SmartPath AI</h3>
+<p>AI Learning Assistant ✨</p>
+</div>
+
+</div>
+
+
+
+<div class="aura-message">
+
+<span id="auraText"></span>
+
+</div>
+
+
+
+<button class="aura-action" id="askAI">
+
+<div class="aura-spinner"></div>
+
+<span>
+Ask AI Anything 🚀
+</span>
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+<script src="aura-ai.js"></script>
+
+</body>
+</html>

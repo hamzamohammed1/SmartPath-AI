@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SmartPath AI Competency Learning</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="competency.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Theme Button -->
+
+<button class="theme-btn" id="themeToggle">
+🌙
+</button>
+
+
+
+<!-- SmartPath Header -->
+
+<header class="top-header">
+
+
+<div class="back-btn" onclick="history.back()">
+←
+</div>
+
+
+<div class="brand">
+
+<img src="logo.png" class="header-logo">
+
+
+<div>
+
+<span>
+SmartPath AI
+</span>
+
+<small>
+Your intelligent study companion
+</small>
+
+</div>
+
+
+</div>
+
+
+
+<div class="header-actions">
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="planner.html">
+Planner
+</a>
+
+
+<button class="hamburger" onclick="toggleMenu()">
+☰
+</button>
+
+
+</div>
+
+
+
+<div class="menu-box" id="menuBox">
+
+<a href="index.html">🏠 Home</a>
+
+<a href="planner.html">🚀 Planner</a>
+
+<a href="competency.html">🎯 Competency</a>
+
+<a href="about.html">✨ About SmartPath AI</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<!-- Competency Hero -->
+
+
+<section class="competency-hero">
+
+
+<div class="hero-glow"></div>
+
+
+<h1>
+Competency Learning Paths 🎯
+</h1>
+
+
+<p>
+
+Master every chapter with SmartPath competency guides.
+Download chapter-based learning PDFs and understand exactly what skills and knowledge you need to achieve.
+
+</p>
+
+
+<div class="learning-info">
+
+
+<div>
+📚
+<br>
+30+ Chapter Guides
+</div>
+
+
+<div>
+🎓
+<br>
+Grade 9 - 12
+</div>
+
+
+<div>
+🚀
+<br>
+Smart Learning
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Library Section -->
+
+
+<section class="competency-library">
+
+
+<h2>
+Choose Your Competency Guide 📘
+</h2>
+
+
+<p>
+Select your grade and unit. Download the competency learning roadmap for each chapter.
+</p>
+
+
+
+<div id="competency-container" class="competency-grid">
+
+<!-- JavaScript creates cards here -->
+
+
+</section>
+
+
+
+
+
+
+<div id="competency-modal" class="competency-modal">
+
+<div class="modal-box">
+
+<button id="close-modal">
+✕
+</button>
+
+<h2 id="modal-title">
+Grade Competency
+</h2>
+
+
+<div id="modal-content" class="modal-content">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Footer -->
+
+
+<footer class="smart-footer">
+
+
+<div class="footer-brand">
+
+
+<img src="logo.png" class="footer-logo">
+
+
+<div>
+
+<h2>
+SmartPath AI
+</h2>
+
+
+<p>
+
+Your intelligent study companion.
+
+<br>
+
+Building smarter learning paths with AI.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<div>
+
+<h3>
+Navigation
+</h3>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="planner.html">
+Planner
+</a>
+
+
+<a href="competency.html">
+Competency
+</a>
+
+
+<a href="about.html">
+About
+</a>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Learning
+</h3>
+
+
+<a href="#">
+Study Plans
+</a>
+
+
+<a href="#">
+Competency Guides
+</a>
+
+
+<a href="#">
+Student Progress
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="contact-box">
+
+
+<h3>
+Contact SmartPath AI
+</h3>
+
+
+<a href="mailto:hamza097669@gmail.com">
+hamza097669@gmail.com
+</a>
+
+
+<a href="tel:0977499498">
+0977499498
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+© 2026 SmartPath AI. All rights reserved.
+</p>
+
+
+<p>
+Designed with 🚀 for smarter students
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+<div class="social-row">
+
+
+<a href="#">
+<img src="telegram.png">
+</a>
+
+
+<a href="#">
+<img src="whatsapp.png">
+</a>
+
+
+<a href="#">
+<img src="twitter.png">
+</a>
+
+
+<a href="#">
+<img src="linkedin.png">
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ================= AURA SMARTPATH AI ================= -->
+
+<div class="aura-ai">
+
+<div class="aura-container">
+
+
+<button class="aura-avatar" id="auraButton">
+
+<img src="ai-avatar.png">
+
+<span></span>
+
+</button>
+
+
+<div class="aura-hint">
+  Ask AI 
+</div>
+
+
+</div>
+
+<div class="aura-box" id="auraBox">
+
+
+<div class="aura-header">
+
+<img src="ai-avatar.png">
+
+<div>
+<h3>SmartPath AI</h3>
+<p>AI Learning Assistant ✨</p>
+</div>
+
+</div>
+
+
+
+<div class="aura-message">
+
+<span id="auraText"></span>
+
+</div>
+
+
+
+<button class="aura-action" id="askAI">
+
+<div class="aura-spinner"></div>
+
+<span>
+Ask AI Anything 🚀
+</span>
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+<script src="competency.js"></script>
+<script src="aura-ai.js"></script>
+</body>
+
+</html>
