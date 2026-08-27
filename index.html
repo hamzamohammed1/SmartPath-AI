@@ -568,6 +568,37 @@ Ask AI Anything 🚀
 </div>
 
  <script>
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        const splash =
+        document.getElementById("smartpathSplash");
+
+
+        if(splash){
+
+            splash.classList.add("smartpath-hide");
+
+
+            setTimeout(()=>{
+
+                splash.remove();
+
+            },800);
+
+        }
+
+
+    },2000);
+
+
+});
+
+</script>
+
+ <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
 
