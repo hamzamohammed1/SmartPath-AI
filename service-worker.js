@@ -3,7 +3,13 @@ const CACHE_NAME = "smartpath-ai-v1";
 const APP_FILES = [
   "./",
   "./index.html",
-  "./manifest.json"
+  "./manifest.json",
+  "./splash.css",
+  "./home-style.css",
+  "./home-slider.js",
+  "./aura-ai.js",
+  "./icon-192.png",
+  "./icon-512.png"
 ];
 
 
