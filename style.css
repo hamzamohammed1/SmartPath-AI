@@ -2788,3 +2788,85 @@ position:absolute;
 
 transform:scale(1.15);
 
+
+.app-download-banner {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+
+    max-width: 380px;
+
+    background: rgba(10,10,10,.95);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 18px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color:white;
+
+    z-index:99999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+.app-download-banner p {
+
+    margin:5px 0 0;
+
+    font-size:12px;
+
+    opacity:.7;
+
+}
+
+
+.close-app-banner {
+
+    position:absolute;
+
+    right:8px;
+
+    top:5px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+
+.install-app-btn {
+
+    background:#d90429;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:20px;
+
+} 
+
