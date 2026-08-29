@@ -255,6 +255,7 @@ onclick="window.location.href='competency.html'">
 
 </button>
 
+ 
 </div>
 
 </section>
@@ -615,6 +616,24 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+
+
+ <div id="appDownloadBanner" class="app-download-banner">
+
+    <button class="close-app-banner" onclick="hideAppBanner()">
+        ×
+    </button>
+
+    <div>
+        <strong>📱 SmartPath AI App</strong>
+        <p>Install for faster learning</p>
+    </div>
+
+    <button class="install-app-btn" onclick="downloadApp()">
+        Install
+    </button>
+
+</div>
  
 <script src="aura-ai.js"></script>
 
