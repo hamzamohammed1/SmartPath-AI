@@ -1,25 +1,28 @@
 {
   "name": "SmartPath AI",
   "short_name": "SmartPath",
-  "description": "SmartPath AI - Advanced AI intelligence platform for smart agriculture, plant vision, and digital farming.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "description": "SmartPath AI helps students create smart study plans, generate timetables, improve learning, and prepare for exams with AI guidance.",
+
+  "start_url": "/SmartPath-AI/",
+  "scope": "/SmartPath-AI/",
+
   "display": "standalone",
   "orientation": "portrait",
+
   "background_color": "#050505",
   "theme_color": "#d90429",
 
   "categories": [
     "education",
-    "technology",
-    "agriculture"
+    "productivity",
+    "technology"
   ],
 
   "lang": "en",
 
   "icons": [
     {
-      "src": "src": "icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
@@ -34,14 +37,19 @@
 
   "shortcuts": [
     {
-      "name": "Plant Diagnosis",
-      "short_name": "Diagnosis",
-      "url": "./plant-diagnosis.html"
+      "name": "Study Planner",
+      "short_name": "Planner",
+      "url": "/SmartPath-AI/planner.html"
     },
     {
-      "name": "AI Explorer",
+      "name": "Competency Learning",
+      "short_name": "Competency",
+      "url": "/SmartPath-AI/competency.html"
+    },
+    {
+      "name": "AI Assistant",
       "short_name": "AI",
-      "url": "./ai-explorer.html"
+      "url": "/SmartPath-AI/ai-request.html"
     }
   ],
 
