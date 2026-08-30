@@ -1,0 +1,137 @@
+/* SMARTPATH AI APP DOWNLOAD FLOATING CARD */
+
+#appDownloadBanner {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%) translateY(120px);
+
+    width: calc(100% - 40px);
+
+    max-width: 380px;
+
+    background:
+    rgba(10,10,15,0.95);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 22px;
+
+    padding: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    color:white;
+
+    z-index:999999;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+    .5s ease;
+
+}
+
+
+#appDownloadBanner.show {
+
+    transform:
+    translateX(-50%)
+    translateY(0);
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+
+.app-download-info strong {
+
+    display:block;
+
+    font-size:15px;
+
+}
+
+
+.app-download-info p {
+
+    margin:5px 0 0;
+
+    font-size:12px;
+
+    opacity:.7;
+
+}
+
+
+
+.install-app-btn {
+
+    background:
+    linear-gradient(
+    135deg,
+    #d90429,
+    #0066ff
+    );
+
+    border:none;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+.close-app-banner {
+
+    position:absolute;
+
+    right:8px;
+
+    top:5px;
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:rgba(255,255,255,.1);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
