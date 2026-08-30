@@ -619,20 +619,35 @@ if ("serviceWorker" in navigator) {
 </script>
 
 
- <div id="appDownloadBanner" class="app-download-banner">
+<div id="appDownloadBanner">
 
-    <button class="close-app-banner" onclick="hideAppBanner()">
-        ×
-    </button>
 
-    <div>
-        <strong>📱 SmartPath AI App</strong>
-        <p>Install for faster learning</p>
-    </div>
+<button class="close-app-banner"
+onclick="hideAppBanner()">
+×
+</button>
 
-    <button class="install-app-btn" onclick="downloadApp()">
-        Install
-    </button>
+
+<div class="app-download-info">
+
+<strong>
+📱 SmartPath AI App
+</strong>
+
+<p>
+Install for faster learning experience
+</p>
+
+</div>
+
+
+<button class="install-app-btn"
+onclick="downloadApp()">
+
+Install
+
+</button>
+
 
 </div>
 
