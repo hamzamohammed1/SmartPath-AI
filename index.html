@@ -227,7 +227,7 @@ onclick="window.location.href='competency.html'">
 
 
 <button class="download-app-btn"
-onclick="downloadApp()">
+onclick="installSmartPath()">
 
 📱 Download App
 
@@ -235,6 +235,9 @@ onclick="downloadApp()">
 
 
 </div>
+
+ </section>
+
  
 <!-- TIMETABLE TEMPLATE BOX -->
 
@@ -606,7 +609,7 @@ Install for faster learning experience
 
 
 <button class="install-app-btn"
-onclick="downloadApp()">
+onclick="installSmartPath()">
 
 Install
 
@@ -625,17 +628,90 @@ function hideAppBanner(){
 }
 
 
-function downloadApp(){
+let deferredPrompt;
 
-    alert("SmartPath AI App coming soon 🚀");
+window.addEventListener("beforeinstallprompt", (e) => {
+
+    e.preventDefault();
+
+    deferredPrompt = e;
+
+    document.getElementById("appDownloadBanner").style.display = "flex";
+
+});
+
+
+function installSmartPath(){
+
+    if(deferredPrompt){
+
+        deferredPrompt.prompt();
+
+        deferredPrompt.userChoice.then((choice)=>{
+
+            if(choice.outcome === "accepted"){
+
+                console.log("SmartPath AI installed");
+
+            }
+
+            deferredPrompt = null;
+
+        });
+
+    }else{
+
+        alert(
+        "Open Chrome menu and choose 'Install app' or 'Add to Home screen'"
+        );
+
+    }
+
+}
+
+
+function hideAppBanner(){
+
+document.getElementById("appDownloadBanner")
+.style.display="none";
 
 }
 
 </script>
 
-<script src="app-download.js"></script>
- 
-<script src="aura-ai.js"></script>
+<script src="./home-slider.js"></script>
 
+<script src="./app-download.js"></script>
+
+<script src="./aura-ai.js"></script>
+
+
+ <script>
+
+if ("serviceWorker" in navigator) {
+
+window.addEventListener("load", () => {
+
+navigator.serviceWorker.register("./service-worker.js")
+
+.then(() => {
+
+console.log("SmartPath AI Service Worker Connected");
+
+})
+
+.catch((error)=>{
+
+console.log("Service Worker Error:", error);
+
+});
+
+});
+
+}
+
+</script>
+
+ 
 </body>
 </html>
